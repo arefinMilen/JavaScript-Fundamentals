@@ -1,0 +1,19 @@
+.para-style
+{
+  color: tomato;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bolder;
+    
+}
+    
+.check
+{
+    color: tomato;
+    font-size: 4rem;
+}
+
+.listener{
+    color: coral;
+    font-size: larger;
+}

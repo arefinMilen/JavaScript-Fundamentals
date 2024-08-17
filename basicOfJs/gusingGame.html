@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+
+       var numOfWon=0;
+        var numOfLose=0;
+
+    for(var i =1;i<=5;i++)
+
+    {
+        
+
+        var guessGame = parseInt(prompt("enter your guess number :"));
+        var randomNum = Math.floor(Math.random()*5)+1;
+        
+        if(guessGame==randomNum)
+        {
+            console.log("you have won !");
+
+             numOfWon++;
+        }
+       
+    else
+    {
+        console.log("you have lose!");
+
+    numOfLose++;
+    }
+    
+    }
+
+    document.write("total won :"+numOfWon+"</br>");
+    document.write("total lose :"+numOfLose+"</br>");
+    </script>
+</body>
+</html>

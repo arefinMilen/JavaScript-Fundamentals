@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="alert('login first')">click here</button>
+    <button onclick="myMessage()">click here</button>
+    <button onclick="alert('are u sure!')">samsul</button>
+
+    <button onclick="myMessage1()">arefin</button>
+    <p id="para" onclick="myPara()">this is paragraph tag.</p>
+
+    <button onclick="myPicture1()">next</button>
+    <button onclick="myPicture2()">prev</button>
+    <img id="myimg" src="#" alt="" height="300" width="300"  >
+    <img id="myimg" src="#" alt="" height="300" width="300">
+    <script>
+        
+
+function myMessage()
+{
+    document.write(alert("first time sign up!"));
+}
+
+function myMessage1()
+{
+
+    alert("this is for practice !");
+
+}
+
+function myPara()
+{
+    document.getElementById("para").innerHTML="paragraph tag.";
+}
+var myVar  = document.querySelector("#myimg");
+function myPicture1()
+{
+
+    myVar.src="photos/img1.jpg";
+    
+}
+function myPicture2 ()
+{
+    myVar.src="photos/img3.jpg";
+}
+
+    </script>
+</body>
+</html>

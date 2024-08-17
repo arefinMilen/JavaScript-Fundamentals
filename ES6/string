@@ -1,0 +1,5 @@
+//this is string basics and this is case sensative !!!means capital small every key matter here 
+let message = "Consistency is the key to success!";
+console.log(message.startsWith('Consistency'));
+console.log(message.endsWith('success!'));
+console.log(message.includes('is'));

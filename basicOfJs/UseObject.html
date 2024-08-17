@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using constractor</title>
+</head>
+<body>
+    <script>
+
+function Student(name,age,cgpa,lang)
+{
+    this.name = name;
+    this.age = age;
+    this.cgpa = cgpa;
+    this.lang = lang;
+
+    this.display = function()
+    {
+
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.cgpa);
+        console.log(this.lang);
+
+    }
+
+}
+
+var stu1 = new Student("samsul",22,3.30,"english");
+var stu2 = new Student("arefin",23,3.40,"french");
+var stu3 = new Student("milen",24,3.50,"japanish");
+
+
+stu1.display();
+stu2.display();
+stu3.display();
+    </script>
+</body>
+</html>

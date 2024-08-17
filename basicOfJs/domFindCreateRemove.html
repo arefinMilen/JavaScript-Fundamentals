@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div" class="newdiv" style="background-color: tomato">
+        <h1>Assalamualaykum!!</h1>
+        <h1>Walaykumassalam!</h1>
+
+    </div>
+</body>
+<script>
+    var heading3 = document.createElement("h1");
+    var text = document.createTextNode("how are you all ");
+    heading3.appendChild(text);
+
+    var mydiv = document.getElementById("my-div");
+    mydiv.appendChild(heading3);
+
+    var heading2 = document.getElementsByTagName("h1")[1];
+    mydiv.removeChild(heading2);
+
+    var heading0 = document.createElement("h1");
+    var text0 = document.createTextNode("adding heading 0 successfully! ");
+    heading0.appendChild(text0);
+    var heading2 = document.getElementsByTagName("h1")[0];
+    mydiv.insertBefore(heading0,heading2);
+
+    // var heading1 = document.createElement("h1");
+    // var text1 = document.createTextNode("replace heading 0 successfully! ");
+    // heading1.appendChild(text1);
+    // var heading3 = document.getElementsByTagName("h1")[0];
+    // mydiv.replaceChild(heading1,heading3.childNodes[0]);
+
+
+</script>
+</html>
