@@ -8,12 +8,13 @@
 <body>
 
     <button onclick="prev()">Previous</button>
-    <img   src="photos/img1.JPG" alt="" width="300" height="300">
+    <img   src="/photos/img1.jpg" alt="" width="300" height="300">
+    
     <button onclick="next()">Next</button>
 
     <script>
 
-var photo = ["photos/img1.jpg","photos/img3.jpg","photos/img5.jpg"];
+var photo = ["/photos/img1.jpg","/photos/img3.jpg","/photos/img5.jpg"];
 var imgTag = document.querySelector("img");
 var count=0;
 function next()

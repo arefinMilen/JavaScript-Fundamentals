@@ -9,6 +9,9 @@
     <div id="my-div" class="newdiv" style="background-color: tomato">
         <h1>Assalamualaykum!!</h1>
         <h1>Walaykumassalam!</h1>
+         <button id="myButton" onclick="btnMessage()">click here</button>
+         <p id="my-para" ></p>
+         <img src="#" alt="" id="my-img" width="300 " height="400 ">
 
     </div>
 </body>
@@ -28,6 +31,24 @@
     heading0.appendChild(text0);
     var heading2 = document.getElementsByTagName("h1")[0];
     mydiv.insertBefore(heading0,heading2);
+
+  var Button =  document.getElementById("myButton")
+  
+
+  function btnMessage ()
+  {
+    var para   =  document.getElementById("my-img")
+    // para.innerHTML = "hi ,welcome to js practice"
+    para.src = "/photos/img1.jpg"
+  }
+    
+var headingNew = document.createElement("h2")
+var newText = document.createTextNode("new text added successfully")
+headingNew.appendChild(newText)
+
+ 
+
+
 
     // var heading1 = document.createElement("h1");
     // var text1 = document.createTextNode("replace heading 0 successfully! ");
