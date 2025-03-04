@@ -1,4 +1,5 @@
-for(var i=0;i<24;i++)
+var len = document.querySelectorAll(".myButton").length
+for(var i=0;i<len;i++)
 {
 
     document.querySelectorAll(".myButton")[i].addEventListener("click",function()
@@ -19,13 +20,11 @@ function audioPlay(text)
     switch(text){
 
         case "a":
-
         var audio = new Audio("sound/key21.mp3");
         audio.play();
         break;
 
         case "b":
-
         var audio = new Audio("sound/key22.mp3");
         audio.play();
         break;
@@ -34,19 +33,18 @@ function audioPlay(text)
         var audio = new Audio("sound/key23.mp3");
         audio.play();
         break;
+
         case "d":
         var audio = new Audio("sound/key24.mp3");
         audio.play();
         break;
 
         case "e":
-
         var audio = new Audio("sound/key01.mp3");
         audio.play();
         break;
 
         case "f":
-
         var audio = new Audio("sound/key02.mp3");
         audio.play();
         break;
@@ -55,18 +53,17 @@ function audioPlay(text)
         var audio = new Audio("sound/key03.mp3");
         audio.play();
         break;
+
         case "h":
         var audio = new Audio("sound/key04.mp3");
         audio.play();
         break;
         case "i":
-
         var audio = new Audio("sound/key05.mp3");
         audio.play();
         break;
 
         case "j":
-
         var audio = new Audio("sound/key06.mp3");
         audio.play();
         break;
@@ -75,18 +72,18 @@ function audioPlay(text)
         var audio = new Audio("sound/key07.mp3");
         audio.play();
         break;
+
         case "l":
         var audio = new Audio("sound/key08.mp3");
         audio.play();
         break;
-        case "m":
 
+        case "m":
         var audio = new Audio("sound/key09.mp3");
         audio.play();
         break;
 
         case "n":
-
         var audio = new Audio("sound/key10.mp3");
         audio.play();
         break;
@@ -95,18 +92,18 @@ function audioPlay(text)
         var audio = new Audio("sound/key11.mp3");
         audio.play();
         break;
+
         case "p":
         var audio = new Audio("sound/key12.mp3");
         audio.play();
         break;
-        case "q":
 
+        case "q":
         var audio = new Audio("sound/key13.mp3");
         audio.play();
         break;
 
         case "r":
-
         var audio = new Audio("sound/key14.mp3");
         audio.play();
         break;
@@ -115,18 +112,18 @@ function audioPlay(text)
         var audio = new Audio("sound/key15.mp3");
         audio.play();
         break;
+
         case "t":
         var audio = new Audio("sound/key16.mp3");
         audio.play();
         break;
-        case "u":
 
+        case "u":
         var audio = new Audio("sound/key17.mp3");
         audio.play();
         break;
 
         case "v":
-
         var audio = new Audio("sound/key18.mp3");
         audio.play();
         break;
@@ -135,6 +132,7 @@ function audioPlay(text)
         var audio = new Audio("sound/key19.mp3");
         audio.play();
         break;
+
         case "x":
         var audio = new Audio("sound/key20.mp3");
         audio.play();
@@ -144,6 +142,7 @@ function audioPlay(text)
         var audio = new Audio("sound/key01.mp3");
         audio.play();
         break;
+
         case "z":
         var audio = new Audio("sound/key02.mp3");
         audio.play();

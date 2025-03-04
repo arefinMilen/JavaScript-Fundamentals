@@ -5,6 +5,7 @@ if (true)
     let  x= 6;
 }
 console.log(x);
+
 //function calling using ES6 version
 const sum =(x,y) =>
 {
