@@ -56,4 +56,6 @@ console.log('Remining Balance: $'+balance);
 console.log('Saving (20% of balance):$' +saving);
 console.log('Happy Saving!!!');
 console.log(finalStatus);
-console(overSpendingMessage);
+if(overSpendingMessage){
+    console.log(overSpendingMessage);
+}
