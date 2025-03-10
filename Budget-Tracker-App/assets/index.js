@@ -5,25 +5,46 @@ const income = 3000;
 const expenses = 2000;
 
 // multiple expenses
-let rent = 1000;
-let groceries = 200;
-let utilities = 100;
-let internet = 50;
+const rent = 1000;
+const groceries = 200;
+const utilities = 100;
+const internet = 50;
 
 // calculate total expenses
-let totalExpenses = rent + groceries + utilities + internet;
+const totalExpenses = rent + groceries + utilities + internet;
 
 // tax deduction(10% of income)
-let tax = income * 0.10;
+const tax = income * 0.10;
 
 // net income after tax
-let netIncome = income - tax;
+const netIncome = income - tax;
 
 // remaining balance
-let balance = netIncome - totalExpenses;
+const balance = netIncome - totalExpenses;
 
 // saving 20% of balance
-let saving = balance * 0.20;
+const saving = balance * 0.20;
+
+// financial status
+let finalStatus = '';
+if(saving >=1000){
+    finalStatus ='You are saving good amount of money';
+}
+else if(saving >=500){
+    finalStatus ='You are saving a decent amount of money';
+}
+else if( saving >=100){
+    finalStatus ='You are saving some money';
+}
+else{
+    finalStatus ='your saving is too low';
+}
+
+// check if expenses is greater than income
+let overSpendingMessage = '';
+if(totalExpenses > income){
+    overSpendingMessage = 'You are over spending your budget';
+}
 
 console.log("My personal budget Tracker app!!!");
 console.log('User: '+userName);
@@ -34,3 +55,5 @@ console.log('Net Income After Tax: $'+netIncome);
 console.log('Remining Balance: $'+balance);
 console.log('Saving (20% of balance):$' +saving);
 console.log('Happy Saving!!!');
+console.log(finalStatus);
+console(overSpendingMessage);
