@@ -8,12 +8,17 @@ else{
     let totalExpenses = 0;
 
 for (let i = 1; i <= numOfExpenses; i++) {
+    const expenses = [];
     let expense = parseFloat(prompt("Enter expense " + i + ":"));
     if(isNaN(expense) || expense < 0) {
         console.log(`Invalid input for expense ${i}, setting it to $0`);
         expense = 0;
     }
-    totalExpenses+=expense;
+    expenses.push(expense);
+    // calculate total expenses using the array
+    for (let j = 0; j<expenses.length; j++){
+        totalExpenses += expenses[j];
+    }
 }
 // tax deduction(10% of income)
 const tax = totalIncome * 0.10;
