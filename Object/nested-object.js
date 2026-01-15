@@ -47,3 +47,37 @@ if ( varsity.name === 'arefin') {
 } else {
     console.log('name is not present in varsity object keys');
 }
+
+
+// array of arrays or 2d dimensional array
+console.log("using of entries in array");
+
+const person = {
+    name: "arefin",
+    age: 25,
+    profession: "developer"
+};
+const entries = Object.entries(person);
+console.log(entries);
+
+//using for in loop to get key and value
+const anotherPerson = {
+    name: 'arefin',
+    age: 25,
+    profession: 'developer'
+};
+for (const key in anotherPerson) {
+    const value = anotherPerson[key];
+    console.log(key, value);
+}
+
+//using for of loop to get key and value
+const yetAnotherPerson = {
+    name: 'samsul',
+    age: 30,
+    profession: 'designer'
+};
+const keys = Object.keys(yetAnotherPerson);
+for (const key of keys) {
+    console.log(key, yetAnotherPerson[key]);
+}
