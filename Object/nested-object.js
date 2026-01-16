@@ -77,7 +77,27 @@ const yetAnotherPerson = {
     age: 30,
     profession: 'designer'
 };
-const keys = Object.keys(yetAnotherPerson);
-for (const key of keys) {
+const obj = Object.keys(yetAnotherPerson);
+for (const key of obj) {
     console.log(key, yetAnotherPerson[key]);
 }
+
+//object freeze and seal
+const frozenObj = {
+    name: 'arefin',
+    age: 25
+};
+Object.freeze(frozenObj);
+frozenObj.age = 30; // This will not change the age property
+console.log(frozenObj.age); // Output: 25
+
+const sealedObj = {
+    name: 'samsul',
+    age: 30
+};
+Object.seal(sealedObj);
+sealedObj.age = 35;
+console.log(sealedObj.age); // Output: 35
+// But you cannot add new properties
+sealedObj.profession = 'designer';
+console.log(sealedObj.profession); // Output: undefined
