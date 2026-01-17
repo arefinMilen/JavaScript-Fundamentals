@@ -12,5 +12,6 @@ function sumALL(a , b) {
         total += num;
 
 }
-console.log(total);
+console.log("total:", total);
 }
+sumALL(5, 10, 15, 20, 25);
