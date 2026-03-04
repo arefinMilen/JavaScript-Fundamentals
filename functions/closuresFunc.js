@@ -1,11 +1,16 @@
-let outer = () => {
+let counter = () => {
     let count = 0;
-    return () => {
+    return function () {
         count++;
-        console.log(count)
+        return count;
     }
 }
-let counter = outer();
-counter();
-counter();
-counter();
+let c = counter();
+console.log(c())
+console.log(c())
+console.log(c())
+console.log(c())
+
+let d = counter();
+console.log(d())
+console.log(c())
